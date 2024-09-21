@@ -17,12 +17,12 @@ app.use(cors({
 app.use(cookieParser())
 app.use(AuthController.authorize)
 
-app.use("/tier", TierRouter)
+app.use("/api/tier", TierRouter)
 
 
 app.use(express.json())
 
-app.use("/auth", AuthRouter)
+app.use("/api/auth", AuthRouter)
 
 
 
